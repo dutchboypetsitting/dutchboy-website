@@ -198,7 +198,9 @@
         <div class="bg-white p-6 md:p-10 rounded-3xl shadow-xl border border-slate-100">
             <div class="text-center mb-8">
                 <h2 class="text-3xl font-bold text-slate-900 mb-2">Get in Touch</h2>
-                <p class="text-slate-500 text-sm">Submit details below to check availability. We will get back to you as soon as possible!</p>
+                <p class="text-slate-500 text-sm max-w-md mx-auto">
+                    Submit your details below to check availability. Sven will get back to you as soon as possible to discuss a face-to-face meet & greet!
+                </p>
             </div>
 
             <form action="#" method="POST" class="space-y-5">
@@ -220,19 +222,24 @@
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Desired Services</label>
-                        <select name="service" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition appearance-none">
-                            <option value="walk-30">30-Minute Walk</option>
-                            <option value="walk-60">Extended Walk (60 mins)</option>
-                            <option value="overnight">Overnight Sitting</option>
-                            <option value="cat-drop">Cat Drop-In Visits</option>
-                            <option value="other">Other / Custom Request</option>
-                        </select>
+                        <div class="relative">
+                            <select name="service" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition appearance-none cursor-pointer">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="overnight">Overnight Pet Sitting ($80/24hr)</option>
+                                <option value="daytime">Daytime Care (9am - 5pm, $50/day)</option>
+                                <option value="medication">Medication Administration Add-on (+$5/day)</option>
+                                <option value="travel-custom">Out of Area Travel / Custom Request</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div>
                     <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Message</label>
-                    <textarea name="message" rows="4" required placeholder="Tell us a little about your pet's routine and care needs..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition"></textarea>
+                    <textarea name="message" rows="4" required placeholder="Tell us a little about your pet's routine, required dates, and specific needs..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition"></textarea>
                 </div>
 
                 <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all">
@@ -246,7 +253,7 @@
             </div>
         </div>
     </section>
-
+    
     <footer class="bg-slate-900 text-slate-400 text-xs py-8 px-4 text-center border-t border-slate-800">
         <div class="max-w-6xl mx-auto space-y-4">
             <div class="text-lg tracking-widest text-slate-700">🐟 🌊 🐾 🌊 🐟</div>

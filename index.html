@@ -237,68 +237,75 @@
     </section>
 
     <section id="contact" class="py-16 px-4 max-w-3xl mx-auto">
-        <div class="bg-white p-6 md:p-10 rounded-3xl shadow-xl border border-slate-100">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-slate-900 mb-2">Get in Touch</h2>
-                <p class="text-slate-500 text-sm max-w-md mx-auto">
-                    Submit your details below to check availability. Sven will get back to you as soon as possible to discuss a face-to-face meet & greet!
-                </p>
+        <div class="relative overflow-hidden bg-white p-6 md:p-10 rounded-3xl shadow-xl border border-slate-100">
+            
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none z-0 w-[110%] md:w-[85%] max-w-none opacity-[0.04] mix-blend-multiply">
+                <img src="logo.svg" alt="" class="w-full h-full object-contain transform scale-105">
             </div>
 
-            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
-                
-                <input type="hidden" name="access_key" value="f77faf80-9e40-4bbe-80c0-644f7ebcf4fd">
-                
-                <input type="hidden" name="subject" value="New Pet Sitting Inquiry from DutchBoyPets.us">
-                
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div>
-                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Your Name</label>
-                        <input type="text" name="name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Email Address</label>
-                        <input type="email" name="email" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition">
-                    </div>
+            <div class="relative z-10">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-2">Get in Touch</h2>
+                    <p class="text-slate-500 text-sm max-w-md mx-auto">
+                        Submit your details below to check availability. Sven will get back to you as soon as possible to discuss a face-to-face meet & greet!
+                    </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div>
-                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Pet's Name & Species</label>
-                        <input type="text" name="pet_info" placeholder="e.g. Max (Golden Retriever)" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition">
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                    
+                    <input type="hidden" name="access_key" value="f77faf80-9e40-4bbe-80c0-644f7ebcf4fd">
+                    
+                    <input type="hidden" name="subject" value="New Pet Sitting Inquiry from DutchBoyPets.us">
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" name="name" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" name="email" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition">
+                        </div>
                     </div>
-                    <div>
-                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Desired Services</label>
-                        <div class="relative">
-                            <select name="service" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition appearance-none cursor-pointer">
-                                <option value="" disabled selected>Select a service...</option>
-                                <option value="overnight">Overnight Pet Sitting ($80/24hr)</option>
-                                <option value="daytime">Daytime Care (9am - 5pm, $50/day)</option>
-                                <option value="medication">Medication Administration Add-on (+$5/day)</option>
-                                <option value="travel-custom">Out of Area Travel / Custom Request</option>
-                            </select>
-                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Pet's Name & Species</label>
+                            <input type="text" name="pet_info" placeholder="e.g. Max (Golden Retriever)" class="w-full bg-slate-50/80 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Desired Services</label>
+                            <div class="relative">
+                                <select name="service" required class="w-full bg-slate-50/80 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Select a service...</option>
+                                    <option value="overnight">Overnight Pet Sitting ($80/24hr)</option>
+                                    <option value="daytime">Daytime Care (9am - 5pm, $50/day)</option>
+                                    <option value="medication">Medication Administration Add-on (+$5/day)</option>
+                                    <option value="travel-custom">Out of Area Travel / Custom Request</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Message</label>
+                        <textarea name="message" rows="4" required placeholder="Tell us a little about your pet's routine, required dates, and specific needs..." class="w-full bg-slate-50/80 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all relative z-10">
+                        Submit Inquiry
+                    </button>
+                </form>
+
+                <div class="mt-8 pt-6 border-t border-slate-100 text-center text-sm text-slate-500 space-y-2">
+                    <div>Email: <a href="mailto:info@dutchboypets.us" class="text-blue-600 font-semibold hover:underline">info@dutchboypets.us</a></div>
+                    <div>Phone: <a href="tel:7607948324" class="text-blue-600 font-semibold hover:underline">760-794-8324</a></div>
                 </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Message</label>
-                    <textarea name="message" rows="4" required placeholder="Tell us a little about your pet's routine, required dates, and specific needs..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-blue-500 focus:bg-white transition"></textarea>
-                </div>
-
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all">
-                    Submit Inquiry
-                </button>
-            </form>
-
-            <div class="mt-8 pt-6 border-t border-slate-100 text-center text-sm text-slate-500 space-y-2">
-                <div>Email: <a href="mailto:info@dutchboypets.us" class="text-blue-600 font-semibold hover:underline">info@dutchboypets.us</a></div>
-                <div>Phone: <a href="tel:7607948324" class="text-blue-600 font-semibold hover:underline">760-794-8324</a></div>
             </div>
         </div>
     </section>
